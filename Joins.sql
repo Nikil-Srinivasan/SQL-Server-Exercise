@@ -30,11 +30,6 @@ from tbl_electricity_connection_type
 right join tbl_slab on tbl_electricity_connection_type.id = tbl_slab.connection_type_id
 order by tbl_slab.rate asc
 
--- Question 5
-
---select tbl_building.owner_name, tbl_building.building_address, tbl
-
-
 -- Question 6
 
 SELECT tbl_building.owner_name, tbl_building.building_address, tbl_meter.meter_number, tbl_bill.payable_amount
@@ -53,10 +48,3 @@ JOIN tbl_electricity_reading ON tbl_electricity_reading.meter_id = tbl_meter.id
 JOIN tbl_bill ON tbl_bill.meter_id = tbl_meter.id
 WHERE MONTH(tbl_bill.bill_month) = 12 AND YEAR(tbl_bill.bill_year) = 2017
 ORDER BY tbl_electricity_reading.total_units DESC
-
--- Question 8
-
---SELECT tbl_building.owner_name, tbl_building_type.connection_name, tbl_meter.meter_number, tbl_bill.payment_date
---FROM tbl_building
---JOIN tbl_building_type ON 
-
