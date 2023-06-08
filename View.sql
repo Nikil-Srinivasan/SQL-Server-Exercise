@@ -66,7 +66,7 @@ DROP VIEW IF EXISTS vw_employee_project;
 SELECT * FROM vw_employee_project
 
 
--- View Tbale do not allow direct insertion or modification of data.
+-- View Table do not allow direct insertion or modification of data.
 -- INSERT INTO vw_employee VALUES(7,'Nikil', 'S', 'Project Agni', '2023-05-23', '2023-06-23')
 
 
